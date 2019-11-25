@@ -8,16 +8,35 @@
 
 /* Begin PBXBuildFile section */
 		B630BD12238BEF460054C2E3 /* Kixr.h in Headers */ = {isa = PBXBuildFile; fileRef = B630BD10238BEF460054C2E3 /* Kixr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B630BD34238BF1770054C2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630BD33238BF1770054C2E3 /* AppDelegate.swift */; };
+		B630BD36238BF1770054C2E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630BD35238BF1770054C2E3 /* ViewController.swift */; };
+		B630BD39238BF1770054C2E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B630BD37238BF1770054C2E3 /* Main.storyboard */; };
+		B630BD3B238BF1780054C2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B630BD3A238BF1780054C2E3 /* Assets.xcassets */; };
+		B630BD3E238BF1780054C2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B630BD3C238BF1780054C2E3 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B630BD0D238BEF460054C2E3 /* Kixr.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Kixr.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B630BD10238BEF460054C2E3 /* Kixr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Kixr.h; sourceTree = "<group>"; };
 		B630BD11238BEF460054C2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B630BD31238BF1770054C2E3 /* KixrExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KixrExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B630BD33238BF1770054C2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B630BD35238BF1770054C2E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B630BD38238BF1770054C2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B630BD3A238BF1780054C2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B630BD3D238BF1780054C2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B630BD3F238BF1780054C2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B630BD0A238BEF460054C2E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B630BD2E238BF1770054C2E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +50,7 @@
 			isa = PBXGroup;
 			children = (
 				B630BD0F238BEF460054C2E3 /* Kixr */,
+				B630BD32238BF1770054C2E3 /* KixrExample */,
 				B630BD0E238BEF460054C2E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B630BD0D238BEF460054C2E3 /* Kixr.framework */,
+				B630BD31238BF1770054C2E3 /* KixrExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +71,19 @@
 				B630BD11238BEF460054C2E3 /* Info.plist */,
 			);
 			path = Kixr;
+			sourceTree = "<group>";
+		};
+		B630BD32238BF1770054C2E3 /* KixrExample */ = {
+			isa = PBXGroup;
+			children = (
+				B630BD33238BF1770054C2E3 /* AppDelegate.swift */,
+				B630BD35238BF1770054C2E3 /* ViewController.swift */,
+				B630BD37238BF1770054C2E3 /* Main.storyboard */,
+				B630BD3A238BF1780054C2E3 /* Assets.xcassets */,
+				B630BD3C238BF1780054C2E3 /* LaunchScreen.storyboard */,
+				B630BD3F238BF1780054C2E3 /* Info.plist */,
+			);
+			path = KixrExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +118,37 @@
 			productReference = B630BD0D238BEF460054C2E3 /* Kixr.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B630BD30238BF1770054C2E3 /* KixrExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B630BD42238BF1780054C2E3 /* Build configuration list for PBXNativeTarget "KixrExample" */;
+			buildPhases = (
+				B630BD2D238BF1770054C2E3 /* Sources */,
+				B630BD2E238BF1770054C2E3 /* Frameworks */,
+				B630BD2F238BF1770054C2E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KixrExample;
+			productName = KixrExample;
+			productReference = B630BD31238BF1770054C2E3 /* KixrExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B630BD04238BEF460054C2E3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = krishna;
 				TargetAttributes = {
 					B630BD0C238BEF460054C2E3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					B630BD30238BF1770054C2E3 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -104,6 +159,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B630BD03238BEF460054C2E3;
 			productRefGroup = B630BD0E238BEF460054C2E3 /* Products */;
@@ -111,6 +167,7 @@
 			projectRoot = "";
 			targets = (
 				B630BD0C238BEF460054C2E3 /* Kixr */,
+				B630BD30238BF1770054C2E3 /* KixrExample */,
 			);
 		};
 /* End PBXProject section */
@@ -120,6 +177,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B630BD2F238BF1770054C2E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B630BD3E238BF1780054C2E3 /* LaunchScreen.storyboard in Resources */,
+				B630BD3B238BF1780054C2E3 /* Assets.xcassets in Resources */,
+				B630BD39238BF1770054C2E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +200,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B630BD2D238BF1770054C2E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B630BD36238BF1770054C2E3 /* ViewController.swift in Sources */,
+				B630BD34238BF1770054C2E3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B630BD37238BF1770054C2E3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B630BD38238BF1770054C2E3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B630BD3C238BF1780054C2E3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B630BD3D238BF1780054C2E3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B630BD13238BEF460054C2E3 /* Debug */ = {
@@ -306,6 +401,40 @@
 			};
 			name = Release;
 		};
+		B630BD40238BF1780054C2E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KixrExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiksarvr.KixrExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B630BD41238BF1780054C2E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = KixrExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.kiksarvr.KixrExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +452,15 @@
 			buildConfigurations = (
 				B630BD16238BEF460054C2E3 /* Debug */,
 				B630BD17238BEF460054C2E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B630BD42238BF1780054C2E3 /* Build configuration list for PBXNativeTarget "KixrExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B630BD40238BF1780054C2E3 /* Debug */,
+				B630BD41238BF1780054C2E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
